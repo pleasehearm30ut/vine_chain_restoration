@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "Red Letter Sync",
+    "slug": "red-letter-sync",
+    "owner": "0mwa1ha1mad0",
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "bb36a0b0-9b98-4348-a0ac-09076c662701"
+      }
+    }
+  }
+}
