@@ -2,8 +2,32 @@
   "expo": {
     "name": "Red Letter Sync",
     "slug": "red-letter-sync",
-    "owner": "0mwa1ha1mad0",
     "version": "1.0.0",
+    "owner": "0mwa1ha1mad0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.realeyenatureion.redlettersync"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
     "extra": {
       "eas": {
         "projectId": "bb36a0b0-9b98-4348-a0ac-09076c662701"
