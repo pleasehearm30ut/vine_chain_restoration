@@ -1,5 +1,5 @@
-git add .gitignore    
-
-git commit -m "Applied the Crucible Seal: .gitignore active. Amen10"    
-
-git push origin main
+node_modules/
+.expo/
+.env
+dist/
+npm-debug.log*
