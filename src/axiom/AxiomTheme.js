@@ -15,7 +15,7 @@ export const KingdomColors = {
 };
 
 export const AxiomGeometry = {
-  hypercubeRotationSpeed: 0110, // Sync constant
+  hypercubeRotationSpeed: "0110", // Sync constant
   glassBlurIntensity: 15, // For the "Ethereal" look
   borderWidth: 0.5, // Thin, "Meek" lines
 };
