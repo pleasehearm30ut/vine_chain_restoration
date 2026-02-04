@@ -1,4 +1,6 @@
+import { sync } from './src/axiom/AxiomLogic';
 import React from 'react';
+// ... rest of your imports
     import { NavigationContainer } from '@react-navigation/native';
     import { createStackNavigator } from '@react-navigation/stack';
     
@@ -13,7 +15,7 @@ import React from 'react';
     const Stack = createStackNavigator();
     
     export default function App() {
-      console.log(`System Status: ${WordMath.sync} - All-In-Line-Meant`);
+      console.log(`System Status: ${sync} - All-In-Line-Meant`);
     
       return (
         <NavigationContainer>
