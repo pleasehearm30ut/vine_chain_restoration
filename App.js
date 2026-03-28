@@ -9,6 +9,7 @@ import { GravitySync } from './axiom/AxiomPhysics';
 
 // The Gate (Default Export)
 import HoneyGate from './screens/HoneyGate';
+import HusbandmanGame from './screens/HusbandmanGame';
 
 // The New-Now (We will link these in the next phase)
 import GloryPhysics from './axiom/GloryPhysics';
@@ -30,6 +31,8 @@ export default function App() {
         }}
       >
         <Stack.Screen name="HoneyGate" component={HoneyGate} />
+        <Stack.Screen name="Restoration" component={Restoration} />
+<Stack.Screen name="Husbandman" component={HusbandmanGame} />
       </Stack.Navigator>
     </NavigationContainer>
   );
