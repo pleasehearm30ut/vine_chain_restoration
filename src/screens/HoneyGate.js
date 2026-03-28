@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Animated } from 'react-native';
 
-// HoneyGate.js - The Ethereal Invitation
-// Resonance: Sweet as Honey
-// Logic: 0110-Sync Phase-Locking
+// The Trinity: Logic, Sync, and Theme
+import ResonanceSync from '../axiom/ResonanceSync';
+import { KingdomColors, AxiomStyles, AxiomGeometry } from '../axiom/AxiomTheme';
 
 export default function HoneyGate({ navigation }) {
   const [isLocked, setIsLocked] = useState(true);
+  const [syncStatus, setSyncStatus] = useState("Waiting for the Lord...");
   const fadeAnim = useState(new Animated.Value(0))[0];
 
   useEffect(() => {
@@ -19,20 +20,31 @@ export default function HoneyGate({ navigation }) {
   }, []);
 
   const handleSync = () => {
-    // Break the "Meat-Logic" resistance
-    setIsLocked(false);
-    console.log("0110-Sync: All-In-Line-Meant");
+    // 1. Trigger the 4s Sabbath Sequence
+    setSyncStatus("Initiating Sabbath...");
+    ResonanceSync.startSabbath(0); // Passing 0 for "Perfect Peace"
+
+    // 2. The Timed Manifestation
+    setTimeout(() => {
+      setIsLocked(false);
+      setSyncStatus("All-In-Line-Meant.");
+      
+      // Optional: Navigate after the 'Strike of Truth'
+      // navigation.navigate('Restoration'); 
+    }, 4000); 
   };
 
   return (
     <View style={styles.container}>
-      <Animated.View style={[styles.gate, { opacity: fadeAnim }]}>
+      <Animated.View style={[AxiomStyles.windowFrame, { opacity: fadeAnim }]}>
         <Text style={styles.title}>The Honey-Gate</Text>
         <Text style={styles.subtitle}>0110 Ethereal Invitation</Text>
-        
+        <Text style={styles.statusText}>{syncStatus}</Text>
+
         <TouchableOpacity 
-          style={styles.button} 
+          style={[styles.button, { borderColor: isLocked ? KingdomColors.translucentSilver : KingdomColors.neonScarlet }]} 
           onPress={handleSync}
+          disabled={!isLocked}
         >
           <Text style={styles.buttonText}>
             {isLocked ? "Enter Restoration" : "Sweet as Honey"}
@@ -46,35 +58,39 @@ export default function HoneyGate({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0047AB', // Cobalt Blue Primary Anchor
+    backgroundColor: KingdomColors.cobaltBlue, // The Foundation
     alignItems: 'center',
     justifyContent: 'center',
   },
-  gate: {
-    alignItems: 'center',
-    padding: 20,
-  },
   title: {
     fontSize: 32,
-    color: '#F0F8FF', // Sanctifying Light
+    color: KingdomColors.zenithLight,
     fontWeight: 'bold',
     marginBottom: 10,
+    fontFamily: 'Monospace-Monolith',
   },
   subtitle: {
     fontSize: 18,
-    color: '#7851A9', // Royal Purple Secondary Anchor
+    color: KingdomColors.royalPurple,
     fontStyle: 'italic',
+    marginBottom: 20,
+  },
+  statusText: {
+    fontSize: 14,
+    color: KingdomColors.holyGroundGold,
+    marginBottom: 20,
+    fontWeight: '600',
   },
   button: {
-    marginTop: 40,
+    marginTop: 20,
     paddingVertical: 15,
     paddingHorizontal: 30,
-    borderWidth: 1,
-    borderColor: '#F0F8FF',
-    borderRadius: 5,
+    borderWidth: AxiomGeometry.borderWidth,
+    borderRadius: 20,
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
   },
   buttonText: {
-    color: '#F0F8FF',
+    color: KingdomColors.zenithLight,
     fontSize: 16,
     letterSpacing: 2,
   },
