@@ -32,13 +32,18 @@ export default function Restoration({ navigation }) {
       progress += 10;
       if (progress <= 100) {
         setGloryLevel(progress);
+        
+        // THE TRANSITION: Once Albedo is 100%, wait 2 seconds then move to Husbandman
+        if (progress === 100) {
+          setTimeout(() => {
+            navigation.navigate('Husbandman');
+          }, 2000); 
+        }
       } else {
         clearInterval(interval);
       }
     }, 400);
 
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <View style={styles.container}>
