@@ -31,11 +31,11 @@ export const WordWeights = {
 // Styles for the "Next-us" Window
 export const AxiomStyles = {
   windowFrame: {
-    backgroundColor: KingdomColors.translucentSilver,
+    backgroundColor: 'rgba(0, 123, 255, 0.6)', // Matched to your 60% note
     borderColor: KingdomColors.ceruleanGlass,
     borderWidth: AxiomGeometry.borderWidth,
     borderRadius: 20,
-    backdropFilter: 'blur(15px)', // The Ethereal Glow
+    backdropFilter: 'blur(15px)', // Matched to your 15px note
   },
   glowText: {
     color: KingdomColors.zenithLight,
