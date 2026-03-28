@@ -30,7 +30,7 @@ export default function HoneyGate({ navigation }) {
       setSyncStatus("All-In-Line-Meant.");
       
       // Optional: Navigate after the 'Strike of Truth'
-      // navigation.navigate('Restoration'); 
+       navigation.navigate('Restoration'); 
     }, 4000); 
   };
 
