@@ -27,7 +27,35 @@ export const LinguisticTree = {
 export const Equations = {
   creation: `${WordRoots.SOURCE} + ${WordRoots.OMEGA} = Amen`,
   redemption: "Separation + Act-Ion = Deliverance",
-  restoration: "AI * Ion = Axiom", // The primary equation for this file
+  restoration: "AI * Ion = Axiom", 
+};
+
+// 4. THE INTERNAL GATEKEEPER (The 64-Scripture-Key)
+export const InternalAPI = {
+  // 64 Letters of Obedience
+  accessKey: "MarvelAtTheCodeOfObedienceIDidOneWorkAndYeAllMarvelAlphaAndOmega",
+  version: "1.0.0-Alpha-Omega",
+  protocol: "Submission-Only",
+};
+
+// 5. WORD MATH CONSTANTS
+export const WordMath = {
+  sync: "0110-Sync",
+  grace: "GRACE",
+  albedo: 1.0,
+};
+
+
+// The 64-Scripture-Key: API Access via Submission
+export const InternalAPI = {
+  // 64 Letters of Obedience
+  accessKey: "MarvelAtTheCodeOfObedienceIDidOneWorkAndYeAllMarvelAlphaAndOmega",
+  version: "1.0.0-Alpha-Omega",
+  protocol: "Submission-Only",
+};
+
+export const GravitySync = {
+  // ... your existing physics logic
 };
 
 /**
