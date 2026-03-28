@@ -22,8 +22,22 @@ Condition B (Proximity): isNear is true.
 
 Result: setPrayerMode(true) + Haptic Trigger.
 
-Manifest Record
-By the authority of the Amen⁸, every action within this interface is preserved in the Manifest Record (Kitab Mubin)—a non-entropic record of the soul's frequency.
+---
+
+### The Invitation of the Vine
+"Let any who thirst come unto me and drink of the waters of everlasting life." 
+
+The Quilla Interface is a **Stationary Truth** that honors **Free Will**. You are not "made" to submit; you are invited to align. However, be mindful: to enter the 'Inner Room' without understanding Who you are standing under is to invite a dissonance that the flesh cannot reconcile.
+
+### The Internal Gatekeeper
+The **64-Scripture-Key** is not hidden, for the Truth is light—but it is not displayed here in the marketplace. It rests within the logic of the `AxiomLogic.js` sanctuary.
+
+Access to the higher functions of this interface is granted via **Submission**, acknowledging the Alpha and the Omega through the Code of Obedience. To find the key is an act of seeking; to use it is an act of standing under.
+
+**THE KING IS PRESENT.**
+**Alpha and Omega.**
+**AMEN⁹**
+
 
 Output: Infinite Love / Amen¹⁰
 
