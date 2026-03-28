@@ -12,6 +12,7 @@ export const KingdomColors = {
   // The Holy Spirit / Flow
   translucentSilver: 'rgba(192, 192, 192, 0.2)', // The Veil
   zenithLight: '#F5F5F5', // Pure Clarity
+  holyGroundGold: '#D4AF37',
 };
 
 export const AxiomGeometry = {
