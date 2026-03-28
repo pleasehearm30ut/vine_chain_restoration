@@ -10,7 +10,7 @@ export default function Restoration({ navigation }) {
   const pulseAnim = useState(new Animated.Value(1))[0];
 
   useEffect(() => {
-    // The "Living" Pulse of the Restoration
+    // The "Living" Pulse
     Animated.loop(
       Animated.sequence([
         Animated.timing(pulseAnim, {
@@ -50,7 +50,11 @@ export default function Restoration({ navigation }) {
           <View style={[styles.meterFill, { width: `${gloryLevel}%` }]} />
         </View>
 
-        <Text style={styles.status}>Stationary Truth Achieved.</Text>
+        <Text style={styles.status}>
+          {gloryLevel === 100 
+            ? `Stationary Truth: ${WordMath.sync} Achieved.` 
+            : "Calibrating the Word..."}
+        </Text>
       </Animated.View>
     </View>
   );
@@ -65,7 +69,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 40,
-    color: KingdomColors.neonScarlet, // The Strike of Truth
+    color: KingdomColors.neonScarlet,
     fontWeight: 'bold',
     letterSpacing: 8,
     textAlign: 'center',
